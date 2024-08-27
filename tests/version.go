@@ -1,13 +1,13 @@
 package tests
 
 import (
+	"regexp"
 	"strings"
 	"testing"
 
 	"github.com/moby/buildkit/util/testutil/integration"
 	"github.com/stretchr/testify/require"
 	"golang.org/x/mod/module"
-	"golang.org/x/mod/semver"
 )
 
 var versionTests = []func(t *testing.T, sb integration.Sandbox){
@@ -45,7 +45,8 @@ func testVersion(t *testing.T, sb integration.Sandbox) {
 	// This defaults to something that's still compatible
 	// with semver.
 	version := fields[1]
-	require.True(t, semver.IsValid(version), "Second field was not valid semver: %+v", version)
+	regex, err := regexp.CompilePOSIX("^v[0-9]+.[0-9]+.[0-9]+(m[0-9]+|m[0-9]+-rc[0-9]+|m[0-9]+-tp[0-9]+)$")
+	require.True(t, err == nil && regex.MatchString(version), "Second field was not valid: %+v", version)
 
 	// Revision should be empty or should look like a git hash.
 	if len(fields) > 2 && len(fields[2]) > 0 {
