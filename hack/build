@@ -8,7 +8,12 @@ set -e
 : "${REVISION=$(./hack/git-meta revision)}"
 : "${PRERELEASE=$(./hack/git-meta version | rev | cut -c3- | rev | cut -d'-' -f 2 | grep -E '(^tp|^rc).*')}"
 : "${REVISION_NUMBER=1}"
-VERSION=$(printf "v%sm%s%s" "$(./hack/git-meta version | rev | cut -c3- | rev | cut -d'-' -f 1 | cut -c2-)" "${REVISION_NUMBER}" "-${PRERELEASE}")
+
+if [ -n "$PRERELEASE" ]; then
+  PRERELEASE="-$PRERELEASE"
+fi
+
+VERSION=$(printf "v%sm%s%s" "$(./hack/git-meta version | rev | cut -c3- | rev | cut -d'-' -f 1 | cut -c2-)" "${REVISION_NUMBER}" "${PRERELEASE}")
 
 : "${CGO_ENABLED=0}"
 : "${GO_PKG=github.com/docker/buildx}"
