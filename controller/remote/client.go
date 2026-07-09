@@ -27,6 +27,7 @@ func NewClient(ctx context.Context, addr string) (*Client, error) {
 		Backoff: backoffConfig,
 	}
 	gopts := []grpc.DialOption{
+		//nolint:staticcheck
 		grpc.WithBlock(),
 		grpc.WithTransportCredentials(insecure.NewCredentials()),
 		grpc.WithConnectParams(connParams),
@@ -36,6 +37,7 @@ func NewClient(ctx context.Context, addr string) (*Client, error) {
 		grpc.WithUnaryInterceptor(grpcerrors.UnaryClientInterceptor),
 		grpc.WithStreamInterceptor(grpcerrors.StreamClientInterceptor),
 	}
+	//nolint:staticcheck
 	conn, err := grpc.DialContext(ctx, dialer.DialAddress(addr), gopts...)
 	if err != nil {
 		return nil, err
