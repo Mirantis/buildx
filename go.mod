@@ -164,4 +164,4 @@ require (
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
 
-replace github.com/moby/buildkit => github.com/Mirantis/buildkit v0.13.0-beta1-m.1
+replace github.com/moby/buildkit => github.com/Mirantis/buildkit v0.13.0-beta1-m.2

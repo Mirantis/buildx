@@ -17,8 +17,8 @@ github.com/Microsoft/go-winio v0.6.1 h1:9/kr64B9VUZrLm5YYwbGtUJnMgqWVOdUAXu6Migc
 github.com/Microsoft/go-winio v0.6.1/go.mod h1:LRdKpFKfdobln8UmuiYcKPot9D2v6svN5+sAH+4kjUM=
 github.com/Microsoft/hcsshim v0.11.1 h1:hJ3s7GbWlGK4YVV92sO88BQSyF4ZLVy7/awqOlPxFbA=
 github.com/Microsoft/hcsshim v0.11.1/go.mod h1:nFJmaO4Zr5Y7eADdFOpYswDDlNVbvcIJJNJLECr5JQg=
-github.com/Mirantis/buildkit v0.13.0-beta1-m.1 h1:1wdugBmXwAm9Npe05FNtaegGqC3eqSsrVd4Yi2f0DpU=
-github.com/Mirantis/buildkit v0.13.0-beta1-m.1/go.mod h1:PrxtkfstT0ZDl/0lcHxTQ6v/yocMY4JiKPi2+OaXkB0=
+github.com/Mirantis/buildkit v0.13.0-beta1-m.2 h1:lzYm0/hWbjGLC9nR4abWIVvtcNtHR6UmxSKazgZBOHc=
+github.com/Mirantis/buildkit v0.13.0-beta1-m.2/go.mod h1:PrxtkfstT0ZDl/0lcHxTQ6v/yocMY4JiKPi2+OaXkB0=
 github.com/Shopify/logrus-bugsnag v0.0.0-20170309145241-6dbc35f2c30d/go.mod h1:HI8ITrYtUY+O+ZhtlqUnD8+KwNPOyugEhfP9fdUIaEQ=
 github.com/Shopify/logrus-bugsnag v0.0.0-20171204204709-577dee27f20d h1:UrqY+r/OJnIp5u0s1SbQ8dVfLCZJsnvazdBP5hS4iRs=
 github.com/Shopify/logrus-bugsnag v0.0.0-20171204204709-577dee27f20d/go.mod h1:HI8ITrYtUY+O+ZhtlqUnD8+KwNPOyugEhfP9fdUIaEQ=
