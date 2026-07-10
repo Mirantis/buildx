@@ -12,8 +12,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/containerd/containerd/platforms"
 	"github.com/containerd/continuity/fs/fstest"
+	"github.com/containerd/platforms"
 	"github.com/creack/pty"
 	"github.com/moby/buildkit/util/contentutil"
 	"github.com/moby/buildkit/util/testutil"

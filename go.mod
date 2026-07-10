@@ -10,6 +10,7 @@ require (
 	github.com/containerd/containerd v1.7.33
 	github.com/containerd/continuity v0.4.4
 	github.com/containerd/log v0.1.0
+	github.com/containerd/platforms v0.2.1
 	github.com/containerd/typeurl/v2 v2.1.1
 	github.com/creack/pty v1.1.18
 	github.com/distribution/reference v0.6.0
@@ -55,7 +56,6 @@ require (
 	github.com/AdaLogics/go-fuzz-headers v0.0.0-20230811130428-ced1acdcaa24 // indirect
 	github.com/Azure/go-ansiterm v0.0.0-20210617225240-d185dfc1b5a1 // indirect
 	github.com/Microsoft/go-winio v0.6.2 // indirect
-	github.com/Microsoft/hcsshim v0.11.7 // indirect
 	github.com/Shopify/logrus-bugsnag v0.0.0-20171204204709-577dee27f20d // indirect
 	github.com/agext/levenshtein v1.2.3 // indirect
 	github.com/apparentlymart/go-cidr v1.0.1 // indirect
@@ -76,7 +76,6 @@ require (
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/containerd/containerd/api v1.8.0 // indirect
 	github.com/containerd/errdefs v0.3.0 // indirect
-	github.com/containerd/platforms v0.2.1 // indirect
 	github.com/containerd/ttrpc v1.2.7 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/docker/distribution v2.8.2+incompatible // indirect
